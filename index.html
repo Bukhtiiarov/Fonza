@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Майнинг Отель</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container-fluid">
+            <div id="logo" class="pull-left">
+                <h1><a href="#intro" class="scrollto">Fonza</a></h1>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="#intro">Майнинг отель</a></li>
+                    <li><a href="#home">О нас</a></li>
+                    <li><a href="#sale">Продажа ASIC</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    <li><a data-toggle="modal" data-target="#formModal" href="#" class="btn-get-started scrollto">Заказать звонок</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="block">
+                        <form action="telegram.php" method="POST" class="form-element" autocomplete="off">
+                            <h2 class="form-title">Закажите обратный звонок и наш консультант свяжется с Вами</h2>
+                            <input name="user_name" type="text" class="form-input__name" tabindex="0" placeholder="Введите ваше имя" required/>
+                            <input name="user_phone" type="tel" class="form-input__phone" tabindex="0" pattern="^[ 0-9]+$" placeholder="Введите ваш телефон" required/>
+                            <input type="submit" class="form-input__button" value="Отправить" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal1" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">ASIC Antminer S9, Алгоритм SHA256: Bitcoin, Bitcoin Cash</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">14Th/s</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">1-2 месяца</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">194 250₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_phone" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal2" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">ASIC Antminer D3, Х11 - подходит для майнинга Dashcoin</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">19,3 GH/s</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">4-5 месяцев</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">85 050₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail1.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_phone" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal3" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">ASIC Antminer L3, Scrypt, подходит для майнинга Litecoin</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">504 MH/s</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">3-4 месяца</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">172 200₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail2.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_phone" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal13" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">ASIC Antminer L3+, Scrypt, подходит для майнинга Litecoin</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">504 MH/s</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">3-4 месяца</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">170 100₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail13.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_phone" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal4" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">ASIC Antminer A3, Blake(2b) Подходит для майнинга Siacoin</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">815 GH/s</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">1-2 месяца</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">267 750₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail3.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_phone" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal14" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">ASIC A4, Blake(2b) Подходит для майнинга Siacoin</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">620 MH/s</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">1-2 месяца</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">220 500₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail14.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_phone" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal15" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">ASIC Antminer T9+, SHA-256 (подходит для майнинга Bitcoin (BTC), Peercoin (PPC), eMark (DEM) и других криптовалют)</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">10,5 T</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">8-9 месяцев</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">151 200₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail15.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_phone" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal5" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">BitFury B8, SHA-256 (подходит для майнинга Bitcoin (BTC), Peercoin (PPC), eMark (DEM) и других криптовалют)</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">50 TH/s</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">3-4 месяца</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">900 000₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail4.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_phone" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal6" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">BitFury FM2018-BT200, SHA-256 (подходит для майнинга Bitcoin (BTC), Peercoin (PPC), eMark (DEM) и других криптовалют)</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">200 TH/s</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">3-4 месяца</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">2 310 000₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail5.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_phone" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal7" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">ibelink DM11G, Х11 - подходит для майнинга Dashcoin</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">10,8 GH/s</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">5-6 месяцев</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">155 000₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail6.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_phone" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal8" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">ibelink DM22G, Х11 - подходит для майнинга Dashcoin</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">22GH/s</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">7-8 месяцев</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">255 000₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail7.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_phone" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal9" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">Baikal GIANT X10, X11/Quark/Qubit/Myriad-Groestl/Skein</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">10 GH/s</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">2-3 месяца</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">535 000₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail8.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_phone" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal10" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">BW L21 Scrypt miner, Scrypt, подходит для майнинга Litecoin</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">550 MH/S</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">2-3 месяца</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">235 000₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail9.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal11" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">Ebit E9 PLUS, SHA-256 (подходит для майнинга Bitcoin (BTC), Peercoin (PPC), eMark (DEM) и других криптовалют)</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">9 TH/s</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">6-7 месяцев</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">115 000₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail10.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal12" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">Pinidea DR 100, Х11 - подходит для майнинга Dashcoin</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">17/20 GH/s</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">3-4 месяца</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">135 000₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail11.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="formModal13" tabindex="-1" role="dialog" aria-labelledby="formModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h2><span class="title-1">Заказ</span></h2>
+                    </div>
+                    <div>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                     </button>
+                    </div>
+                </div>
+                <div class="buyForm">
+                    <div class="row indent-20">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="buyForm__info">
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Майнер:</div>
+                                    <div class="buyForm__infoCell">Whatsminer M3, Х11 - подходит для майнинга Dashcoin</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Производительность:</div>
+                                    <div class="buyForm__infoCell">11,5 TH/s</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Прогнозируемая окупаемость:</div>
+                                    <div class="buyForm__infoCell">3-4 месяца</div>
+                                </div>
+                                <div class="buyForm__infoRow">
+                                    <div class="buyForm__infoCell">Стоимость:</div>
+                                    <div class="buyForm__infoCell">185 000₽</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-0"></div>
+                    </div>
+                    <form class="buyForm__form thanks_form" action="mail12.php" method="POST">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Имя*" autocomplete="off" required="required" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="email" name="user_email" placeholder="E-mail*" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="buyForm__row"><input type="text" name="user_name" placeholder="Телефон" class="buyForm__input"></div>
+                                <div class="buyForm__row"><input type="text" name="user_num" placeholder="Количество майнеров" autocomplete="off" required="required" class="buyForm__input"></div>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="buyForm__block"><input type="submit" value="Заказать" class="form-input__button"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="intro">
+        <div class="intro-container">
+            <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators"></ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active" style="background-image: url('img/intro-carousel/1.jpg');">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2> Fonza- это идеальная площадка для размещения Asic майнеров
+                                </h2>
+                                <a href="#contact" class="btn-get-started scrollto">Оставить заявку</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('img/intro-carousel/2.jpg');">
+                        <div class="carousel-container">
+                            <div class="carousel-content">
+                                <h2> Наша цена на размещение самая низкая</br>в Сибири- всего 4,5 рубля за кВт/ч,</br> без дополнительных арендных платежей
+                                </h2>
+                                <a href="#contact" class="btn-get-started scrollto">Оставить заявку</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Предыдущая</span>
+                    </a>
+                    <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Следующая</span>
+                    </a>
+                </div>
+            </div>
+    </section>
+    <main id="main">
+        <section id="home">
+            <div class="container">
+                <header class="section-header wow fadeInUp">
+                    <h3>О нас</h3>
+                    <p>Наш майнинг отель – это специально подготовленная площадка для надежной, непрерывной и комфортной работы Ваших майнеров. Мы работаем как с физическими так и с юридическими лицами, жителями Омска и других регионов.</p>
+                </header>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                        <div class="icon"><i class="ion-connection-bars"></i></div>
+                        <h4 class="title"><a>СТАБИЛЬНЫЙ ВЫСОКОСКОРОСТНОЙ ИНТЕРНЕТ</a></h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                        <div class="icon"><i class="ion-android-car"></i></div>
+                        <h4 class="title"><a>БЕСПЛАТНАЯ ДОСТАВКА И УСТАНОВКА ВАШИХ АСИКОВ</a></h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                        <div class="icon"><i class="ion-settings"></i></div>
+                        <h4 class="title"><a>ОПЕРАТИВНАЯ ТЕХНИЧЕСКАЯ ПОДДЕРЖКА</a></h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                        <div class="icon"><i class="ion-ios-videocam"></i></div>
+                        <h4 class="title"><a>СИСТЕМА ВИДЕОНАБЛЮДЕНИЯ</a></h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                        <div class="icon"><i class="ion-flash"></i></div>
+                        <h4 class="title"><a>БОЛЬШОЙ ЭНЕРГИТИЧЕСКИЙ ПОТЕНЦИАЛ</a></h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                        <div class="icon"><i class="ion-iphone"></i></div>
+                        <h4 class="title"><a>УДАЛЁННЫЙ ДОСТУП К ОБОРУДОВАНИЮ</a></h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                        <div class="icon"><i class="ion-android-lock"></i></div>
+                        <h4 class="title"><a>КРУГЛОСУТОЧНАЯ ОХРАНА</a></h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+                        <div class="icon"><i class="ion-fireball"></i></div>
+                        <h4 class="title"><a>ПОЖАРНАЯ СИГНАЛИЗАЦИЯ</a></h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                        <div class="icon"><i class="ion-ios-paper"></i></div>
+                        <h4 class="title"><a>ДОГОВОР ОТВЕТСТВЕННОГО ХРАНЕНИЯ</a></h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sale" class="section-bg">
+            <div class="container">
+                <header class="section-header">
+                    <h3 class="section-title">Продажа ASIC</h3>
+                    <p>ASIC – представляет из себя интегральную схему, которая была разработана для решения конкретных задач, одна из них - майнинг различных криптовалют. Данное оборудование не только производительнее, чем GPU фермы, но и в некоторых случаях
+                        экономичнее с точки зрения электропотребления. Мы находимся в Омске и обеспечиваем бесплатную доставку по городу и области. После совершения заказа с Вами свяжется наш менеджер для уточнения.
+                    </p>
+                </header>
+                <div class="row sale-container ">
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/s9.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal1" href="#">"Antminer S9"-14Th/s</a></h5>
+                                <p> Цена = 194 250 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/d3.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal2" href="#">"Antminer D3"-504Mh/s</a></h5>
+                                <p> Цена = 85 050 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/l3.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal3" href="#">"Antminer L3"-504MH/s</a></h5>
+                                <p> Цена = 172 200 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/l3+.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal13" href="#">"Antminer L3+"-504MH/s</a></h5>
+                                <p> Цена = 170 100 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/a3.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal4" href="#">"Antminer А3"-815GH/s</a></h5>
+                                <p> Цена = 267 750 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/a4.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal14" href="#">"А4"-620MH/s</a></h5>
+                                <p> Цена = 220 500 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/T9.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal15" href="#">"Antminer T9+"-10.5T</a></h5>
+                                <p> Цена = 151 200 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/bfb8.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal5" href="#">"BitFury B8"-50TH/s</a></h5>
+                                <p> Цена = 900 000 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/bfbt200.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal6" href="#">"BitFury BT200"-200TH/s</a></h5>
+                                <p> Цена = 2 310 000 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/dm11g.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal7" href="#">"ibelink DM11G"-10,8GH/s</a></h5>
+                                <p> Цена = 155 000 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/dm22g.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal8" href="#">"ibelink DM22G"-22GH/s </a></h5>
+                                <p> Цена = 255 000 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/baikal.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal9" href="#">"Baikal GIANT X10"-10GH/s</a></h5>
+                                <p> Цена = 535 000 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/bw21.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal10" href="#">"BW L21"-550MH/S</a></h5>
+                                <p> Цена = 235 000 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/ebit.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal11" href="#">"Ebit E9 PLUS"-9TH/s </a></h5>
+                                <p> Цена = 115 000 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/pinidea.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal12" href="#">"Pinidea DR 100"-20GH/s</a></h5>
+                                <p> Цена = 135 000 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 sale-item  wow fadeInUp">
+                        <div class="sale-wrap">
+                            <figure>
+                                <img src="img/portfolio/whatsminer.jpg" class="img-fluid" alt="">
+                            </figure>
+                            <div class="sale-info">
+                                <h5><a data-toggle="modal" data-target="#formModal13" href="#">"Whatsminer M3"-11,5TH/s</a></h5>
+                                <p> Цена = 185 000 руб.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="contact" class="section-bg wow fadeInUp">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Наши контакты</h3>
+                    <p>Оставить заявку Вы можете по телефону или email.</p>
+                </div>
+                <div class="row contact-info">
+                    <div class="col-md-4">
+                        <div class="contact-address">
+                            <i class="ion-ios-location-outline"></i>
+                            <h3>Адрес</h3>
+                            <address>644033 г. Омск, ул. Красный путь 105-117</address>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-phone">
+                            <i class="ion-ios-telephone-outline"></i>
+                            <h3>Номер телефона</h3>
+                            <p><a href="tel:+79993303357">8-(999)-330-33-57</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-email">
+                            <i class="ion-ios-email-outline"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:fonzamining@gmail.com">fonzamining@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-header">
+                    <h3>Оставить заявку</h3>
+                </div>
+                <div class="form">
+                    <div id="sendmessage">Ваша заявка отправлена.Спасибо.</div>
+                    <div id="errormessage"></div>
+                    <form action="https://formspree.io/fonzamining@gmail.com" method="POST" role="form" class="contactForm" />
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="Имя " class="form-control" id="name" placeholder="Ваше имя" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" name="number" id="subject" placeholder="Ваш номер телефона" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <input type="hidden" name="_next" value="https://bukhtiiarov.github.io/Mining_hotel.github.io/" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control" name="Сообщение " rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Текст сообщения"></textarea>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group col-md-12 text-center"><button type="submit">Отправить заявку</button></div>
+                        </form>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <div class="success-wrapper">
+        <div class="success-content">
+            <h2>Спасибо за заявку</h2>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="row">
+            <div class="col-xs-12 col-md-3 footer-top">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="d-flex flex-column footer-info">
+                            <div class="p-2">
+                                <h3>Fonza</h3>
+                                <div class="d-flex justify-content-start">
+                                    <div class="social-links">
+                                        <a href="https://www.facebook.com/groups/149917065662362/" class="facebook"><i class="fab fa-facebook"></i></a>
+                                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://m.vk.com/club162271586" class="linkedin"><i class="fab fa-vk"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <section class="layer layer-default layer-bb wow fadeInUp">
+                    <div class="layer__inner layer__inner-50">
+                        <div class="align-center-desktop">
+                            <h6>Мы принимаем все формы оплаты - наличные, безналичный перевод, банковские карты, криптовалюта</h6>
+                            <div class="test-flex">
+                                <div class="test-flex__item ">
+                                    <i class="fas fa-ruble-sign fa-4x" alt="принимаем к оплате рубли " title="принимаем к оплате рубли "></i>
+                                </div>
+                                <div class="test-flex__item ">
+                                    <i class="fab fa-cc-mastercard fa-4x" alt="принимаем к оплате MasterCard " title="принимаем к оплате MasterCard "></i>
+                                </div>
+                                <div class="test-flex__item ">
+                                    <i class="fab fa-cc-visa fa-4x" alt="принимаем к оплате Visa " title="принимаем к оплате Visa "></i>
+                                </div>
+                                <div class="test-flex__item ">
+                                    <i class="fab fa-btc fa-4x" alt="принимаем к оплате Bitcoin " title="принимаем к оплате Bitcoin "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up fa-2x"></i></a>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
